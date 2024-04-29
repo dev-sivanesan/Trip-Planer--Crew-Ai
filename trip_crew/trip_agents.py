@@ -2,8 +2,8 @@ from crewai import Agent
 from langchain.llms import OpenAI
 from langchain_google_genai import ChatGoogleGenerativeAI
 import os
-os.environ["OPENAI_MODEL_NAME"]='your model name'
-llm = ChatGoogleGenerativeAI(model="gemini-pro",verbose = True,temperature = 0.1,google_api_key='your gookle api key')
+os.environ["OPENAI_MODEL_NAME"]='gpt-3.5-turbo'
+llm = ChatGoogleGenerativeAI(model="gemini-pro",verbose = True,temperature = 0.1,google_api_key='AIzaSyDdLnEmYAA0tqJnMldNHyY-Hodxva1NN6g')
 from crewai_tools import  WebsiteSearchTool
 from crewai_tools import SerperDevTool
 searchtool=SerperDevTool()
@@ -15,8 +15,8 @@ from tools.browser_tools import BrowserTools
 from tools.calculator_tools import CalculatorTools
 from tools.search_tools import SearchTools
 
-os.environ ['OPENAI_API_KEY']="your open appi key"
-os.environ ['SERPER_API_KEY']='your api key'
+os.environ ['OPENAI_API_KEY']="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"
+os.environ ['SERPER_API_KEY']='f12d949deb101179f4db6ae346c8dc0a98226fe8'
 
 class TripAgents():
 
