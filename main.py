@@ -7,10 +7,10 @@ from trip_crew.trip_tasks import TripTasks
 from langchain_google_genai import ChatGoogleGenerativeAI
 import os
 
-os.environ['GOOGLE_API_KEY']="AIzaSyDdLnEmYAA0tqJnMldNHyY-Hodxva1NN6g"
+os.environ['GOOGLE_API_KEY']=""
 llm = ChatGoogleGenerativeAI(model="gemini-pro", verbose=True, temperature=0.1, google_api_key=os.environ.get('GOOGLE_API_KEY', ''))
-os.environ['OPENAI_API_KEY'] = "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"
-os.environ['SERPER_API_KEY'] = 'f12d949deb101179f4db6ae346c8dc0a98226fe8'
+os.environ['OPENAI_API_KEY'] = ""
+os.environ['SERPER_API_KEY'] = ''
 
 class TripCrew:
 
