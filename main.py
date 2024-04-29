@@ -9,8 +9,7 @@ import os
 
 os.environ['GOOGLE_API_KEY']=""
 llm = ChatGoogleGenerativeAI(model="gemini-pro", verbose=True, temperature=0.1, google_api_key=os.environ.get('GOOGLE_API_KEY', ''))
-os.environ['OPENAI_API_KEY'] = ""
-os.environ['SERPER_API_KEY'] = ''
+
 
 class TripCrew:
 
