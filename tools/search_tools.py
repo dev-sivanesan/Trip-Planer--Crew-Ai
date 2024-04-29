@@ -15,7 +15,7 @@ class SearchTools():
     url = "https://google.serper.dev/search"
     payload = json.dumps({"q": query})
     headers = {
-        'X-API-KEY': 'f12d949deb101179f4db6ae346c8dc0a98226fe8',
+        'X-API-KEY': 'your api key',
         'content-type': 'application/json'
     }
     response = requests.request("POST", url, headers=headers, data=payload)
